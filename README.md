@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design Platform
 
-## Getting Started
+A modern, award-winning design platform website built with Next.js, Framer Motion, and Tailwind CSS.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Design**: Awwwards-quality aesthetic with smooth animations
+- **Framer Motion**: Extensive use of animations, transitions, and micro-interactions
+- **Dark/Light Mode**: Seamless theme switching with system preference support
+- **Fully Responsive**: Optimized for all screen sizes and devices
+- **Type-Safe**: Built with TypeScript for robust development
+- **Performance Optimized**: Fast loading and smooth interactions
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS 3
+- **Animations**: Framer Motion
+- **Theme**: next-themes
+- **Icons**: Lucide React
+- **TypeScript**: Full type safety
+
+## 📁 Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── about/             # About page
+│   ├── contact/           # Contact page with form
+│   ├── portfolio/         # Portfolio showcase
+│   ├── pricing/           # Pricing tiers
+│   ├── services/          # Services overview
+│   └── page.tsx           # Home page
+├── components/
+│   ├── animations/        # Reusable animation components
+│   ├── sections/          # Page sections
+│   │   ├── home/         # Home page sections
+│   │   ├── Navigation.tsx # Main navigation
+│   │   └── Footer.tsx    # Site footer
+│   ├── ui/               # UI components
+│   └── theme-provider.tsx # Theme provider
+└── lib/                  # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Home** - Hero, services showcase, testimonials, portfolio preview, stats, CTA
+2. **Services** - Complete list of all platform services with descriptions
+3. **Pricing** - Pricing tiers, comparison table, FAQs
+4. **Portfolio** - Filterable project gallery
+5. **About** - Company story, values, timeline, team
+6. **Contact** - Contact form, information, and communication options
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 18+ and npm
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+```bash
+git clone https://github.com/Jiwuuuu/design-platform.git
+cd design-platform
+```
 
-## Deploy on Vercel
+2. Install dependencies:
+```bash
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 🎭 Animation Features
+
+- **Page Transitions**: Smooth transitions between pages
+- **Scroll Animations**: Elements animate into view as you scroll
+- **Hover Effects**: Interactive hover states on all interactive elements
+- **Micro-interactions**: Button presses, card hovers, and more
+- **Staggered Animations**: Sequential animations for groups of elements
+- **Parallax Effects**: Background elements with depth
+
+## 🎨 Customization
+
+### Colors
+
+Edit the color scheme in `app/globals.css`:
+
+```css
+:root {
+  --primary: 262 83% 58%;    /* Purple */
+  --secondary: 240 4.8% 95.9%;
+  /* ... */
+}
+```
+
+### Fonts
+
+The project uses Inter and Space Grotesk fonts via Google Fonts CDN.
+
+## 📦 Key Dependencies
+
+- `next`: ^15.5.9
+- `react`: ^19.2.3
+- `framer-motion`: ^12.23.26
+- `next-themes`: ^0.4.6
+- `tailwindcss`: ^3.4.17
+- `lucide-react`: ^0.561.0
+
+## 🚀 Deployment
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Jiwuuuu/design-platform)
+
+Or deploy to any platform that supports Next.js.
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📧 Contact
+
+For questions or support, reach out to hello@designplatform.com
